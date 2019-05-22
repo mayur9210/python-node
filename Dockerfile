@@ -2,9 +2,9 @@ FROM python:2.7
 
 RUN \
   cd /tmp && \
-  wget http://nodejs.org/dist/v4.4.7/node-v4.4.7.tar.gz && \
-  tar xvzf node-v4.4.7.tar.gz && \
-  rm -f node-v4.4.7.tar.gz && \
+  wget http://nodejs.org/dist/v6.4.0/node-v6.4.0.tar.gz && \
+  tar xvzf node-v6.4.0.tar.gz && \
+  rm -f node-v6.4.0.tar.gz && \
   cd node-v* && \
   ./configure && \
   CXX="g++ -Wno-unused-local-typedefs" make && \
